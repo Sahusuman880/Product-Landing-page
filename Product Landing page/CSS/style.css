@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Dancing+Script&display=swap');
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS variable */
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    
+    position: sticky;
+    top: 0;
+    
+}
+/* navigation bar logo and image */
+#logo{
+   margin: 0px 34px;
+}
+#logo img{
+    margin: 3px 6px;
+    height: 70px;
+}
+/* navbar list item */
+
+#navbar ul{
+    display: flex;
+    margin-left: 350px;
+    
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    
+    
+    
+}
+#navbar::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color:BLACK;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.item a,.item1 a{
+    display: block;
+    padding: 1px 20px;
+    text-decoration: none;
+    color:black;
+    background-color: rgb(138, 24, 24);
+    font-weight: bold;
+    border-radius: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 0 10px;
+}
+.item1 a{
+  color: white;
+  background-color:rgb(221, 39, 69);
+}
+.item a:hover{
+    color: white;
+    background-color:rgb(221, 39, 69);
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 0px;
+    height: 333px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    background: url('images/bg-1.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 420px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+}
+#home h3{
+    color:rgb(216, 12, 56);
+    
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color:rgb(216, 12, 56);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+   
+}
+/* services section */
+.most{
+  font-size: 2.5rem;
+  color: black;
+  font-family: 'Bree Serif', serif;
+  margin-top: 20px;
+}
+.Popular{
+  font-size: 3.5rem;
+  color:rgb(218, 15, 49);
+  font-family: 'Dancing Script', cursive;
+}
+#services,#services-1{
+   margin: 34px;
+   display: flex; 
+}
+ .box{
+  /* border: 2px solid brown; */
+  padding: 34px;
+  margin: 3px 19px;
+  border-radius: 23px;
+  /* background-color: rgb(135, 135, 196); */
+  margin-bottom: 20px;
+  border: 1px solid black;
+  box-shadow: 5px 5px rgb(158, 8, 33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ width: 20%;
+}
+ .box img{
+  height: 156px;
+  display: block;
+  margin: auto;
+  
+}
+ .box p{
+    font-family: 'Bree Serif', serif;
+    font-size: 0.9rem;
+}
+ .box h2{
+  font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+.box:hover{
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: rgb(150, 30, 50);
+  color: white;
+}
+/* client section */
+#client-section{
+    /* height: 200px;
+    position: relative; */
+    
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(158, 8, 33) ;
+    /* border: 2px solid rgb(150, 30, 50); */
+    
+    
+}
+.image{
+  
+  width: 50%;
+}
+.image img{
+  
+  border-radius: 50px;
+  width:100%;
+  border: 2px solid black;
+  box-shadow: 5px 7px 5px black;
+}
+.content{
+  
+  width: 50%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:white ;
+}
+.content button:hover{
+  transition: all 0.5s ease-in-out;
+  transform: translateX(30px);
+  background-color:rgb(150, 30, 50) ;
+  border: 3px solid black;
+  color: white;
+}
+#description{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#social{
+  margin: 0px 10px;
+}
+#social img{
+  margin: 3px 10px;
+    height: 140px;
+    
+}
+#social1 img{
+  margin: 3px 10px;
+    height: 50px;
+}
+#social1 img:hover{
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.3);
+
+}
+#description ul{
+  display: flex;
+}
+#description ul li {
+  list-style: none;
+  font-size: 1.3rem;
+  margin: 10px;
+}
+#description ul li a{
+  display: block;
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+  margin: 0 10px;
+  font-family: 'Dancing Script', cursive;
+}
+#description ul li a:hover{
+  text-decoration:underline;
+  color: grey;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size:1.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn1{
+    padding: 8px 30px;
+    border: 2px solid white;
+    background-color:rgb(238, 69, 69);
+    color: black;
+    margin: 8px 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+    position: absolute;
+    right: 70px;
+    top: 3px;
+}
+.btn2{
+  padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn3{
+  padding:15px 20px;
+  background-color: white;
+    border: 3px solid rgb(3, 252, 218);
+    font-family: 'Bree Serif', serif;
+    color:black;
+    font-weight: bold;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.centre{
+    text-align: center;
+}
+
+
